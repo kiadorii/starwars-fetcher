@@ -14,7 +14,7 @@ class App extends Component {
         return json.json();
       })
       .then(starWarsChars => {
-        this.setState({ peeps: starWarsChars.name });
+        this.setState({ peeps: starWarsChars.results });
       })
       .catch(err => {
         console.log(err);
